@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="button-wrapper">
+      <button class="restart-btn" onclick="restart()">NEW GAME</button>
+    </div>
+    >
+    <div class="container">
+      <div class="home" id="home-container-el">
+        <h1>HOME</h1>
+        <div class="score-container">
+          <h1 class="score" id="home-score-el">0</h1>
+        </div>
+        <div class="button-container">
+          <button class="score-btn" onclick="homeAdd1Point()">+1</button>
+          <button class="score-btn" onclick="homeAdd2Points()">+2</button>
+          <button class="score-btn" onclick="homeAdd3Points()">+3</button>
+        </div>
+      </div>
+      <div class="guest">
+        <h1>GUEST</h1>
+        <div class="score-container">
+          <h1 class="score" id="guest-score-el">0</h1>
+        </div>
+        <div class="button-container">
+          <button class="score-btn" onclick="guestAdd1Point()">+1</button>
+          <button class="score-btn" onclick="guestAdd2Points()">+2</button>
+          <button class="score-btn" onclick="guestAdd3Points()">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
